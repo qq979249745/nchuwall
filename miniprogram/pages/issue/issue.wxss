@@ -1,0 +1,59 @@
+page{
+
+}
+.notice{
+  width: 100%;
+  background: #f7dbd7;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  
+}
+.notice image{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 10rpx;
+}
+.a{
+  width: 90%;
+  margin: 20rpx 5%;
+  font-size: 15px;
+}
+.b{
+  background-color: #efefef;
+  padding: 20rpx;
+  display: flex;
+}
+.c{
+  background-color: #efefef;
+  margin:40rpx 0;
+  padding: 20rpx;
+}
+.c textarea{
+  padding: 20rpx;
+}
+.d{
+  background-color: #efefef;
+  margin:40rpx 0;
+  padding: 30rpx;
+}
+.d switch{
+  float: right;
+}
+.wx-switch-input{width:42px !important;height:20px !important;}
+.wx-switch-input::before{width:41px !important;height: 20px !important;}
+.wx-switch-input::after{width: 18px !important;height: 18px !important;}
+.btn{
+  background: #e07883;
+  color: #fff;
+  width: 95%;
+}
+.chooseImg{
+ margin-bottom: 20rpx;
+}
+.chooseImg image{
+  width:120rpx;
+  height:120rpx;
+  margin-left: 20rpx; 
+  
+} 

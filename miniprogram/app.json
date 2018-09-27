@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/issue/issue",
+    "pages/info/info",
+    "pages/info/wode/wode",
+    "pages/details/details"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#e07883",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#e07883",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home1.png"
+      },
+      {
+        "pagePath": "pages/issue/issue",
+        "text": "发布",
+        "iconPath": "images/like.png",
+        "selectedIconPath": "images/like1.png"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath":"images/my1.png"
+      }
+    ]
+  }
+}

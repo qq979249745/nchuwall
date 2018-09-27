@@ -1,0 +1,33 @@
+<template name="biaobai">
+  <view class='a' bindtap='xiangqing' data-fbid='{{item.fbid}}'>
+    <view class='b'>
+      <image class='image1' src="{{item.niming?'/images/niming.png':item.avatarUrl}}"></image>
+      <view >
+        <text >{{item.niming?'匿名':item.nickName}}</text>
+        <image class='image2' src="{{(item.gender==1)?'/images/boy.png':'/images/girl.png'}}"></image>
+      </view>
+      <text class='b-text'>对{{item.biaoti}}表白</text>
+    </view>
+    <view class='fengexian'></view>
+    <view style='width:98%;margin:10rpx 0'>
+      <text selectable='true'  class='neirong'>{{item.neirong}}</text>
+      <image class='haveImg' src="{{item.imgPath=='NULL'?null:'/images/haveImg.png'}}"></image>
+    </view>
+    <view class='fengexian'></view>
+    <view class='c'>
+      <view class='zan' catchtap='dianzan' data-fbid='{{item.fbid}}' data-index='{{index}}'>
+        <image src="{{item.content?'/images/yizan.png':'/images/zan.png'}}"></image>
+        <text>{{item.praiseNum}}</text>
+      </view>
+      <view class='chakan'>
+        <image src='/images/chakan.png'></image>
+        <text>{{item.watchNum}}</text>
+      </view>
+      <view class='pinglun'>
+        <image src='/images/pinglun.png'></image>
+        <text>{{item.commentNum}}</text>
+      </view>
+    </view>
+    <text class='chakan'>查看全部评论</text>
+  </view>
+</template>

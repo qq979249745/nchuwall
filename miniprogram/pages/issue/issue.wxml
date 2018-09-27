@@ -1,0 +1,27 @@
+<!-- <view>
+<button bindtap='ontap'>连接数据库</button>
+</view> -->
+<view class='notice'>
+  <image src='/images/notice.png'></image>
+  <text>在表白对象处 可以填写 找人、寻物、二手等内容</text>
+</view>
+<form bindsubmit="submit">
+<view class='a'>
+  <view class='b'>表白对象：
+    <input name='biaoti' placeholder='不填写表示向全部人表白' maxlength='14' value='{{value}}'></input>
+  </view>
+  <view class='c'>表白内容：
+    <textarea  name='neirong' placeholder='如：我暗恋你好久了。' value='{{value}}'>
+    </textarea>
+  </view>
+  <view class='d'>是否匿名：
+    <switch name='niming'></switch>
+  </view >
+  <view class='chooseImg'>
+  <image src='/images/add.png' bindtap='chooseImg'></image>
+  <image src='{{imgPath}}' mode='aspectFit'></image>
+  </view>
+  
+  <button class='btn' form-type='submit'>发布</button>
+</view>
+</form>

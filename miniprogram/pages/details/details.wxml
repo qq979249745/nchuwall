@@ -1,0 +1,52 @@
+<view class='a'>
+  <view class='b'>
+    <image class='image1' src="{{data.niming?'/images/niming.png':data.avatarUrl}}"></image>
+    <view class='c'>
+      <text>{{data.niming?'匿名':data.nickName}}</text>
+      <image class='image2' src="{{(data.gender==1)?'/images/boy.png':'/images/girl.png'}}"></image>
+    </view>
+    <view class='d'>
+      <text style='text-align:right;font-size: 13px;margin-bottom:5rpx '>对{{data.biaoti}}表白</text>
+      <text style='font-size: 13px;text-align:right'>{{data.fbtime}}</text>
+    </view>
+  </view>
+  <view class='fengexian'></view>
+  <view style='width:100%'>
+    <text class='text1'>{{data.neirong}}</text>
+    <image style='width:95%;height:0;margin-left:20rpx;' mode='widthFix' src='{{imgPath}}'></image>
+  </view>
+  <view class='fengexian'></view>
+
+  <block wx:for='{{comment}}' wx:key='{{item.commentNumid}}'>
+    <view class='f'>
+      <image class='image3' src="{{item.avatarUrl}}"></image>
+      <view class='h'>
+        <view class='g'>
+          <text style='color:#346db0;font-size:12px'>{{item.nickName}}</text>
+          <image class='image4' src="{{(item.gender==1)?'/images/boy.png':'/images/girl.png'}}"></image>
+        </view>
+        <view class='d'>
+          <text style='font-size: 13px;margin-bottom:5rpx;word-break: break-all; '>{{item.content}}</text>
+        </view>
+        <text style='font-size: 13px;text-align:right'>{{item.cdate}}</text>
+      </view>
+    </view>
+    <view class='fengexian'></view>
+  </block>
+<view class='i'>
+<block wx:for='{{watch}}' wx:key='{{item.openid}}'>
+  <image src="{{item.content}}"></image>
+</block>
+</view>
+
+  <text >-----匆匆过客------</text>
+  <view class='fengexian'></view>
+  <text style='color:#d5d5d5;'>没有更多了</text>
+</view>
+<view class='e'>
+  <input bindinput='inputValue' placeholder='在这输入评论内容' value='{{inputValue}}'></input>
+  <view bindtap='send'>发送</view>
+</view>
+<view wx:if='{{show}}' class='xuanfu' bindtap='delete'>
+<text>删除</text>
+</view>

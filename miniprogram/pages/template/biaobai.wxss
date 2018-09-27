@@ -1,0 +1,96 @@
+.a {
+  margin: 17rpx 2.5%;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  background-color: #f8f7fa;
+  border-radius: 0.5rem;
+  align-items: center;
+}
+
+.fengexian {
+  width: 95%;
+  height: 4rpx;
+  background-color: #ede6ed;
+  margin: 0;
+}
+
+.b {
+  width: 95%;
+  
+}
+.image1 {
+  margin-top: 15rpx;
+  width: 90rpx;
+  height: 90rpx;
+  float: left;
+  border-radius: 50%;
+}
+.b view {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin: 20rpx;
+}
+.image2{
+  margin-top: 10rpx;
+  width: 35rpx;
+  height: 35rpx;
+}
+.b-text{
+  float: right;
+  margin: 20rpx;
+  font-size: 12px;
+}
+.neirong{
+  font-size: 20px;
+  float: left;
+  word-break: break-all;
+  text-align: left;
+}
+.haveImg{
+  width: 30rpx;
+  height: 30rpx;
+  float: left;
+  margin: 10rpx;
+}
+.c{
+  width: 90%;
+}
+.c text{
+  color: #707070;
+}
+.pinglun{
+  margin-top: 5rpx;
+  
+  display: flex;
+  align-items: center;
+  margin-left: 45%;
+}
+.pinglun image{
+  width: 33rpx;
+  height: 33rpx;
+  margin-right: 8rpx; 
+}
+.zan{
+  float: left;
+  display: flex;
+  align-items: center;
+}
+.zan image{
+  width: 42rpx;
+  height: 42rpx;
+}
+.chakan{
+  float: right;
+  display: flex;
+  align-items: center;
+}
+.chakan image{
+  width: 54rpx;
+  height: 54rpx;
+}
+.chakan{
+  color: #999;
+  font-size: 15px;
+}

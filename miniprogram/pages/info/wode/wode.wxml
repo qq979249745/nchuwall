@@ -1,0 +1,4 @@
+<import src='../../template/biaobai.wxml'/>
+<block wx:for='{{data}}' wx:key='{{item.fdid}}'>
+  <template is="biaobai" data="{{item,index}}"/>
+</block>

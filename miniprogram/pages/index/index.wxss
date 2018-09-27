@@ -1,0 +1,30 @@
+@import "../template/biaobai.wxss";
+page {
+  text-align: center;
+  background-color: #f7dbd7;
+}
+
+swiper {
+  height: 375rpx;
+  width: 96%;
+  margin-left: 2%
+}
+
+swiper image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+.xuanfu{
+  width: 80rpx;
+  height: 80rpx;
+  position: fixed;
+  right: 10%;
+  bottom: 10%;
+  color: #fff;
+  background: #e07883;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

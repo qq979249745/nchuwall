@@ -1,0 +1,124 @@
+.a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 100rpx;
+}
+
+.b {
+  width: 95%;
+}
+
+.image1 {
+  width: 128rpx;
+  height: 128rpx;
+  float: left;
+  border-radius: 50%;
+}
+
+.c {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin: 20rpx;
+}
+
+.image2 {
+  margin-top: 10rpx;
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.d {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin: 20rpx;
+}
+
+
+.fengexian {
+  width: 98%;
+  height: 4rpx;
+  background-color: #ede6ed;
+  margin: 0;
+}
+
+.text1 {
+  font-size: 17px;
+  float: left;
+  word-break: break-all;
+  text-align: left;
+  margin: 20rpx;
+}
+.e{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+}
+.e input{
+  height: 100rpx;
+  width: 80%;
+  padding-left: 15rpx;
+  background: #f2f2f2;
+}
+.e view{
+  color: #fff;
+  height: 100rpx;
+  width: 20%;
+  text-align: center;
+  padding-top: 24rpx;
+  background: #e07883;
+}
+.f{
+  width: 95%;
+  margin: 15rpx;
+}
+.image3{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  float: left;
+}
+.g {
+  display: flex;
+  flex-direction: row;
+  float: left;
+  margin-left: 10rpx;
+}
+.image4{
+  margin-left: 10rpx;
+  width: 35rpx;
+  height: 35rpx;
+}
+.h{
+  display: flex;
+  flex-direction: column;
+}
+.i{
+  width: 95%;
+  
+}
+.i image{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 20rpx 10rpx;
+}
+.xuanfu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80rpx;
+  height: 80rpx;
+  position: fixed;
+  font-size: 3px;
+  right: 10%;
+  bottom: 15%;
+  color: #fff;
+  background: #e07883;
+  border-radius: 50%;
+}

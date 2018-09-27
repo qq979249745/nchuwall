@@ -1,0 +1,40 @@
+<view>
+  <view wx:if="{{show}}" class='a container'>
+    <image src='/images/i.png'></image>
+    <text>为了更好的体验，此应用需要获取您的昵称、头像等基本信息授权</text>
+    <button open-type="getUserInfo" bindgetuserinfo="getinfo">确认授权</button>
+  </view>
+  <view wx:else class='b'>
+    <image class='b-image' src='{{userInfo.avatarUrl}}' mode='aspectFill'></image>
+    <text>{{userInfo.nickName}}</text>
+
+    <view class='g'></view>
+    <view class='c' bindtap='wode' data-biaobai='1'>
+      <image class='d' src='/images/wdfb.png'></image>
+      <text>我的发布</text>
+      <image class='e' src='/images/jt.png'></image>
+    </view>
+    <view class='f'></view>
+    <view class='c' bindtap='wode' data-biaobai='2'>
+      <image class='d' src='/images/wdpl.png'></image>
+      <text>我评论的</text>
+      <image class='e' src='/images/jt.png'></image>
+    </view>
+    <view class='f'></view>
+    <view class='c'>
+      <image class='d' src='/images/fkyj.png'></image>
+      <text>反馈意见</text>
+      <image class='e' src='/images/jt.png'></image>
+    </view>
+    <view class='f'></view>
+    <view class='c'>
+      <image class='d' src='/images/lxkf.png'></image>
+      <text>联系客服</text>
+      <image class='e' src='/images/jt.png'></image>
+    </view>
+    <view class='f'></view>
+
+
+
+  </view>
+</view>
