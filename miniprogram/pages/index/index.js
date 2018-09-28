@@ -113,4 +113,10 @@ Page({
       url: '/pages/issue/issue',
     })
   },
+  imgTap:function(res){
+    console.log(res.currentTarget.dataset.index);
+    wx.navigateTo({
+      url: '/pages/index/imgdetail/imgdetail?index=' + res.currentTarget.dataset.index,
+    })
+  }
 })

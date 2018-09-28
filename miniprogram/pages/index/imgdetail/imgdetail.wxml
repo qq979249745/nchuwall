@@ -1,0 +1,2 @@
+<!--pages/index/imgdetail/imgdetail.wxml-->
+<text>点击了第{{index}}张图片</text>

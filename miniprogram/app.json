@@ -4,7 +4,8 @@
     "pages/issue/issue",
     "pages/info/info",
     "pages/info/wode/wode",
-    "pages/details/details"
+    "pages/details/details",
+    "pages/index/imgdetail/imgdetail"
   ],
   "window":{
     "backgroundTextStyle":"light",
