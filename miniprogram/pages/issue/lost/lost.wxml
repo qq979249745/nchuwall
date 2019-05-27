@@ -1,0 +1,6 @@
+<import src='../../template/issue/issue.wxml'/>
+<view class='e'>
+  <button class="{{lost?'f normal':'f unnormal'}}" bindtap='lost'>丢失</button>
+  <button class="{{lost?'f unnormal':'f normal'}}" bindtap='found'>捡到</button>
+</view>
+<template is="issue" data="{{data}}"/>

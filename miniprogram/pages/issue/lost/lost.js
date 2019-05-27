@@ -1,31 +1,44 @@
 var app = getApp();
 var url = app.globalData.baseUrl;
 // const db = wx.cloud.database();
-var util = require('../../utils/util.js');
+var util = require('../../../utils/util.js');
 var me;
 Page({
   data: {
     imgPath: '/images/empty.png',
     value: null,
     data: {
-      title: '表白对象：',
-      titleTip: '不填写表示向全部人表白',
-      content: '表白内容：',
-      contentTip: '如：我暗恋你好久了。',
+      title: '丢失物品：',
+      titleTip: '填写物品名称',
+      content: '详细内容：',
+      contentTip: '填写丢失物品的位置，如：二食堂',
     },
-    
+    lost: true,
   },
-  lost: function() { //失物招领
-    wx.navigateTo({
-      url: 'lost/lost',
+  
+  lost: function () { //二手买卖
+    this.setData({
+      data: {
+        title: '丢失物品：',
+        titleTip: '填写物品名称',
+        content: '详细内容：',
+        contentTip: '填写丢失物品的位置，如：二食堂',
+      },
+      lost: true,
     });
   },
-  business: function() { //二手买卖
-    wx.navigateTo({
-      url: 'business/business',
+  found: function () { //二手买卖
+    this.setData({
+      data: {
+        title: '捡到物品：',
+        titleTip: '填写物品名称',
+        content: '详细内容：',
+        contentTip: '填写捡到物品的位置，如：二食堂',
+      },
+      lost: false,
     });
   },
-  onShow: function() {
+  onShow: function () {
     me = this;
     if (!wx.getStorageSync('userInfo')) {
       wx.switchTab({
@@ -37,7 +50,7 @@ Page({
       });
     }
   },
-  submit: function(res) {
+  submit: function (res) {
     console.log(res.detail.value);
     var value = res.detail.value;
     if (value.neirong.length > 0) {
@@ -54,7 +67,7 @@ Page({
             neirong: value.neirong,
             niming: value.niming ? true : 'NULL',
           },
-          success: function(res) {
+          success: function (res) {
             console.log(res);
             if (res.statusCode == 200) {
               wx.switchTab({
@@ -86,7 +99,7 @@ Page({
             neirong: value.neirong,
             niming: value.niming ? true : 'NULL',
           },
-          success: function(res) {
+          success: function (res) {
             console.log(res);
             if (res.statusCode == 200) {
               wx.switchTab({
@@ -116,10 +129,10 @@ Page({
       });
     }
   },
-  chooseImg: function() {
+  chooseImg: function () {
     wx.chooseImage({
       count: 1,
-      success: function(res) {
+      success: function (res) {
         console.log(res);
         me.setData({
           imgPath: res.tempFilePaths[0]

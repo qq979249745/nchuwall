@@ -1,17 +1,19 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/issue/issue",
+    "pages/issue/lost/lost",
+    "pages/issue/business/business",
     "pages/info/info",
     "pages/info/wode/wode",
     "pages/details/details",
     "pages/index/imgdetail/imgdetail"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#e07883",
     "navigationBarTitleText": "",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "borderStyle": "white",
@@ -33,8 +35,9 @@
         "pagePath": "pages/info/info",
         "text": "我的",
         "iconPath": "images/my.png",
-        "selectedIconPath":"images/my1.png"
+        "selectedIconPath": "images/my1.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

@@ -10,5 +10,5 @@
   <template is="biaobai" data="{{item,index}}"/>
 </block>
 <view class='xuanfu' bindtap='biaobai'>
-<text style='font-size: 10px;'>我要\n表白</text>
+<text style='font-size: 10px;'>我要\n发布</text>
 </view>

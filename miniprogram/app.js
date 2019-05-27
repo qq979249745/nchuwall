@@ -39,6 +39,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    baseUrl: 'http://s2442030.a98.bid/'
+    baseUrl: 'http://192.168.43.1:8080/'
   }
 })

@@ -1,0 +1,3 @@
+<import src='../../template/issue/issue.wxml'/>
+
+<template is="issue" data="{{data}}"/>

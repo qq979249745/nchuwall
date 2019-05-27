@@ -8,21 +8,24 @@ var d = [];
 Page({
   data: {
     imgUrls: [
-      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+      'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+      'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
+      'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640',
     ],
     data:[]
   },
-  onShow: function() {
-    start=0;
-    end=5;
+  onLoad:function(){
+    start = 0;
+    end = 5;
     me = this;
     d = [];
     this.getData();
   },
+  onShow: function() {
+    
+  },
   onPullDownRefresh:function(){
-    this.onShow();
+    this.onLoad();
   },
   getData:function(){
     wx.request({
@@ -114,7 +117,6 @@ Page({
     })
   },
   imgTap:function(res){
-    console.log(res.currentTarget.dataset.index);
     wx.navigateTo({
       url: '/pages/index/imgdetail/imgdetail?index=' + res.currentTarget.dataset.index,
     })

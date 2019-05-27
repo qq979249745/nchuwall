@@ -1,31 +1,21 @@
 var app = getApp();
 var url = app.globalData.baseUrl;
 // const db = wx.cloud.database();
-var util = require('../../utils/util.js');
+var util = require('../../../utils/util.js');
 var me;
 Page({
   data: {
     imgPath: '/images/empty.png',
     value: null,
     data: {
-      title: '表白对象：',
-      titleTip: '不填写表示向全部人表白',
-      content: '表白内容：',
-      contentTip: '如：我暗恋你好久了。',
+      title: '物品名称：',
+      titleTip: '在此填写宝贝名称',
+      content: '物品描述：',
+      contentTip: '在此描述你的宝贝：如品牌、规格、成色、出售原因等',
     },
-    
   },
-  lost: function() { //失物招领
-    wx.navigateTo({
-      url: 'lost/lost',
-    });
-  },
-  business: function() { //二手买卖
-    wx.navigateTo({
-      url: 'business/business',
-    });
-  },
-  onShow: function() {
+  
+  onShow: function () {
     me = this;
     if (!wx.getStorageSync('userInfo')) {
       wx.switchTab({
@@ -37,7 +27,7 @@ Page({
       });
     }
   },
-  submit: function(res) {
+  submit: function (res) {
     console.log(res.detail.value);
     var value = res.detail.value;
     if (value.neirong.length > 0) {
@@ -54,7 +44,7 @@ Page({
             neirong: value.neirong,
             niming: value.niming ? true : 'NULL',
           },
-          success: function(res) {
+          success: function (res) {
             console.log(res);
             if (res.statusCode == 200) {
               wx.switchTab({
@@ -86,7 +76,7 @@ Page({
             neirong: value.neirong,
             niming: value.niming ? true : 'NULL',
           },
-          success: function(res) {
+          success: function (res) {
             console.log(res);
             if (res.statusCode == 200) {
               wx.switchTab({
@@ -116,10 +106,10 @@ Page({
       });
     }
   },
-  chooseImg: function() {
+  chooseImg: function () {
     wx.chooseImage({
       count: 1,
-      success: function(res) {
+      success: function (res) {
         console.log(res);
         me.setData({
           imgPath: res.tempFilePaths[0]

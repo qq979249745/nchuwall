@@ -1,0 +1,22 @@
+<template name="issue">
+  <form bindsubmit="submit">
+    <view class='a'>
+      <view class='b'>{{data.title}}
+        <input name='biaoti' placeholder='{{data.titleTip}}' maxlength='14' value='{{value}}'></input>
+      </view>
+      <view class='c'>{{data.content}}
+        <textarea name='neirong' placeholder='{{data.contentTip}}' value='{{value}}'>
+        </textarea>
+      </view>
+      <view class='d'>是否匿名：
+        <switch name='niming'></switch>
+      </view>
+      <view class='chooseImg'>
+        <image src='/images/add.png' bindtap='chooseImg'></image>
+        <image src='{{imgPath}}' mode='aspectFit'></image>
+      </view>
+
+      <button class='btn' form-type='submit'>发布</button>
+    </view>
+  </form>
+</template>

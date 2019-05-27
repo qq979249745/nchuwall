@@ -1,0 +1,19 @@
+@import "../../template/issue/issue.wxss";
+.e{
+  display: flex;
+  flex-direction: row;
+}
+.f{
+  width: 39%;
+  border-radius: 20rpx;
+  margin-top: 5rpx;
+  font-size: 30rpx;
+}
+.normal{
+  background-color: #e07883;
+  color: #fff;
+}
+.unnormal{
+  background-color: #fff;
+  color: #e07883;
+}
