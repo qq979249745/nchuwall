@@ -2,7 +2,7 @@
 $arr=array();
 $arr["fbid"]= $_POST["fbid"];
 if($arr["fbid"]){
-	$con=mysqli_connect("localhost","s2442030","979249745","test"); 
+	$con=mysqli_connect("localhost","root","root","test"); 
 	if(!$con){  
 		echo'数据库打开失败'.mysqli_connect_error();
 	} else{
